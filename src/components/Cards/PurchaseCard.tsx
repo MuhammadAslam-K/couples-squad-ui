@@ -11,7 +11,7 @@ function PurchaseCard(props: { details: CardDetails[] }) {
     const { details } = props;
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <>
             {details.map((item, index) => (
                 <div key={index} className="card w-full bg-base-100 shadow-xl">
                     <figure><img src={item.imageUrl} alt="Event" className="w-full object-cover h-48" /></figure>
@@ -28,7 +28,7 @@ function PurchaseCard(props: { details: CardDetails[] }) {
                     </div>
                 </div>
             ))}
-        </div>
+        </>
     );
 }
 

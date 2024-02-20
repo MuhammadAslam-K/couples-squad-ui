@@ -1,4 +1,5 @@
 import CategoryCard from "../components/Cards/CategoryCard"
+import LocationCard from "../components/Cards/LocationCard"
 import PurchaseCard from "../components/Cards/PurchaseCard"
 import ImageCarousel from "../components/Carousel/ImageCarousel"
 import Navbar from "../components/Navbar/Navbar"
@@ -24,14 +25,52 @@ function HomePage() {
     ]
 
     const musicDetails = [
-        { imageUrl: '../../public/img/music/music-img1.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img2.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img3.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img4.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img5.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img6.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img7.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-        { imageUrl: '../../public/img/music/music-img8.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img1.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img2.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img3.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img4.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img5.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img6.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img7.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img8.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    ]
+
+    const featuredDetails = [
+        { imageUrl: '/img/music/music-img1.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img2.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img3.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img4.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img5.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img6.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img7.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+        { imageUrl: '/img/music/music-img8.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    ]
+
+    const upcomingEvents = [
+        { imageUrl: '/img/Upcoming-Events/img-1.png', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-2.png', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-3.jpg', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-4.jpg', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-5.jpg', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-6.jpg', type: "Class" },
+        { imageUrl: '/img/Upcoming-Events/img-7.jpg', type: "Couple" },
+        { imageUrl: '/img/Upcoming-Events/img-8.jpg', type: "Music" },
+        { imageUrl: '/img/Upcoming-Events/img-9.png', type: "Matrimoni" },
+        { imageUrl: '/img/Upcoming-Events/img-10.png', type: "Event" },
+        { imageUrl: '/img/Upcoming-Events/img-11.jpg', type: "Speech" },
+        { imageUrl: '/img/Upcoming-Events/img-12.jpg', type: "Class" },
+    ]
+
+    const popularCitiesForMeetupsDetails = [
+        { imageUrl: '/img/Meetup/img-1.jpg', location: "Istanbul, Turkey", events: 20, typeOne: "Hotels", typeTwo: "Resorts" },
+        { imageUrl: '/img/Meetup/img-2.jpg', location: "Sydney, Australia", events: 20, typeOne: "Hotels", typeTwo: "Class" },
+        { imageUrl: '/img/Meetup/img-3.jpg', location: "Baku, Azerbaijan", events: 20, typeOne: "Hotels", typeTwo: "Class" },
+        { imageUrl: '/img/Meetup/img-4.jpg', location: "Istanbul, Turkey", events: 20, typeOne: "Hall", typeTwo: "Resorts" },
+        { imageUrl: '/img/Meetup/img-5.jpg', location: "Sydney, Australia", events: 20, typeOne: "School", typeTwo: "Dating" },
+        { imageUrl: '/img/Meetup/img-6.jpg', location: "Baku, Azerbaijan", events: 20, typeOne: "Hotels", typeTwo: "Gettogether" },
+        { imageUrl: '/img/Meetup/img-7.jpg', location: "Istanbul, Turkey", events: 20, typeOne: "Caffe", typeTwo: "Resorts" },
+        { imageUrl: '/img/Meetup/img-8.jpg', location: "Sydney, Australia", events: 90, typeOne: "Iceland", typeTwo: "Dating" },
+        { imageUrl: '/img/Meetup/img-9.jpg', location: "Baku, Azerbaijan", events: 2, typeOne: "Court", typeTwo: "Class" },
     ]
 
     return (
@@ -56,12 +95,25 @@ function HomePage() {
                     <h1 className="font-medium text-4xl my-5">The people platform—Where <br /> interests become friendships</h1>
                 </section>
 
-                <div className="my-20">
+                <div className="my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <CategoryCard details={categoryDetails} bgColour={"black"} />
                 </div>
 
-                <div className="my-10 mt-20">
+                <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <PurchaseCard details={musicDetails} />
+                </div>
+
+                <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <PurchaseCard details={featuredDetails} />
+                </div>
+
+                <div className="my-20 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
+                    <CategoryCard details={upcomingEvents} bgColour={"red-600"} />
+                </div>
+
+                <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <LocationCard details={popularCitiesForMeetupsDetails} />
                 </div>
 
             </div>
