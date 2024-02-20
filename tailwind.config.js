@@ -3,9 +3,15 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ], theme: {
-    extend: {},
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'zilla': ['"Zilla Slab"', 'serif'], // Add 'zilla' as a custom font family
+      },
+    },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require('daisyui')],
 }
 
