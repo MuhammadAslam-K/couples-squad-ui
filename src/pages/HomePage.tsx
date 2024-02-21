@@ -1,7 +1,10 @@
+import ActivityCard from "../components/Cards/ActivityCard"
 import CategoryCard from "../components/Cards/CategoryCard"
 import LocationCard from "../components/Cards/LocationCard"
 import PurchaseCard from "../components/Cards/PurchaseCard"
+import ActivitiesCarousel from "../components/Carousel/ActivitiesCarousel"
 import ImageCarousel from "../components/Carousel/ImageCarousel"
+import Footer from "../components/Footer/Footer"
 import Navbar from "../components/Navbar/Navbar"
 import Search from "../components/Search/Search"
 
@@ -73,52 +76,77 @@ function HomePage() {
         { imageUrl: '/img/Meetup/img-9.jpg', location: "Baku, Azerbaijan", events: 2, typeOne: "Court", typeTwo: "Class" },
     ]
 
+    const activitiesDetails = [
+        { imageUrl: '/img/activites/main-img3.png', avatarImgUrl: "/img/activites/avatar-img1.png", description: "How to become Smart and gentle in relationships online-Thomas Hope", accountName: "Thomas Hope", views: "53k", uploadedAt: "Today" },
+        { imageUrl: '/img/activites/main-img2.png', avatarImgUrl: "/img/activites/avatar-img2.png", description: "How to become Smart and gentle in relationships online-Thomas Hope", accountName: "Thomas Hope", views: "53k", uploadedAt: "2 week ago" },
+    ]
+
+    const activitiesCardDetails = [
+        { cardImgUrl: '/img/activites/activites-card-img1.jpg', title: "Wijaya Abadi", description: 'Basic Equipment to play skateboard safely-online', avatarImgUrl: '/img/activites/activites-card-avatar-img1.jpg' },
+        { cardImgUrl: '/img/activites/activites-card-img2.jpg', title: "Wijaya Abadi", description: 'Basic Equipment to play skateboard safely-online', avatarImgUrl: '/img/activites/activites-card-avatar-img1.jpg' },
+        { cardImgUrl: '/img/activites/activites-card-img3.jpg', title: "Wijaya Abadi", description: 'Basic Equipment to play skateboard safely-online', avatarImgUrl: '/img/activites/activites-card-avatar-img1.jpg' },
+        { cardImgUrl: '/img/activites/activites-card-img4.jpg', title: "Wijaya Abadi", description: 'Basic Equipment to play skateboard safely-online', avatarImgUrl: '/img/activites/activites-card-avatar-img1.jpg' },
+        { cardImgUrl: '/img/activites/activites-card-img5.jpg', title: "Wijaya Abadi", description: 'Basic Equipment to play skateboard safely-online', avatarImgUrl: '/img/activites/activites-card-avatar-img1.jpg' }
+    ]
+
     return (
-        <div className="bg-white flex justify-center">
-            <div className="w-10/12">
-                <Navbar />   {/* Navbar component */}
+        <>
 
-                <section className="text-center my-10 mb-14 text-black font-zilla"> {/*  Intro Section */}
-                    <h1 className="font-medium text-4xl my-5">The people platform—Where <br /> interests become friendships</h1>
-                    <p>Whatever your interest, from hiking and reading to networking and skill sharing, <br /> there are thousands of people who share it on Meetup. Events are happening <br /> every day sign up to join the fun.</p>
-                </section>
+            <div className="bg-white flex justify-center">
+                <div className="w-10/12">
+                    <Navbar />   {/* Navbar component */}
 
-                <div className="my-10">
-                    <Search /> {/* Search input component */}
+                    <section className="text-center my-10 mb-14 text-black font-zilla"> {/*  Intro Section */}
+                        <h1 className="font-medium text-4xl my-5">The people platform—Where <br /> interests become friendships</h1>
+                        <p>Whatever your interest, from hiking and reading to networking and skill sharing, <br /> there are thousands of people who share it on Meetup. Events are happening <br /> every day sign up to join the fun.</p>
+                    </section>
+
+                    <div className="my-10">
+                        <Search /> {/* Search input component */}
+                    </div>
+
+                    <div className="my-5 mt-20">
+                        <ImageCarousel images={mainImages} />  {/* ImageCarousel Component */}
+                    </div>
+
+                    <section className="text-center my-20 mb-14 text-black font-zilla">
+                        <h1 className="font-medium text-4xl my-5">The people platform—Where <br /> interests become friendships</h1>
+                    </section>
+
+                    <div className="my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <CategoryCard details={categoryDetails} bgColour={"black"} />
+                    </div>
+
+                    <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <PurchaseCard details={musicDetails} />
+                    </div>
+
+                    <div className="my-5 mt-20">
+                        <ActivitiesCarousel details={activitiesDetails} />
+                        <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                            <ActivityCard details={activitiesCardDetails} />
+                        </div>
+                    </div>
+
+                    <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <PurchaseCard details={featuredDetails} />
+                    </div>
+
+                    <div className="my-20 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
+                        <CategoryCard details={upcomingEvents} bgColour={"red-600"} />
+                    </div>
+
+                    <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                        <LocationCard details={popularCitiesForMeetupsDetails} />
+                    </div>
+
                 </div>
-
-                <div className="my-5 mt-20">
-                    <ImageCarousel images={mainImages} />  {/* ImageCarousel Component */}
-                </div>
-
-                <section className="text-center my-20 mb-14 text-black font-zilla">
-                    <h1 className="font-medium text-4xl my-5">The people platform—Where <br /> interests become friendships</h1>
-                </section>
-
-                <div className="my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <CategoryCard details={categoryDetails} bgColour={"black"} />
-                </div>
-
-                <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <PurchaseCard details={musicDetails} />
-                </div>
-
-                <div className="my-10 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <PurchaseCard details={featuredDetails} />
-                </div>
-
-                <div className="my-20 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
-                    <CategoryCard details={upcomingEvents} bgColour={"red-600"} />
-                </div>
-
-                <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                    <LocationCard details={popularCitiesForMeetupsDetails} />
-                </div>
-
             </div>
-        </div>
-
+            <div className="bg-black flex justify-center">
+                <Footer />
+            </div>
+        </>
     )
 }
 

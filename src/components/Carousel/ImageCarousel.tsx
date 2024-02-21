@@ -4,7 +4,7 @@ function ImageCarousel(props: { images: string[] }) {
     const { images } = props
     return (
         <div>
-            <div className="carousel carousel-end  rounded-box">
+            <div className="carousel carousel-end rounded-box">
                 <div className="carousel-item">
                     {
                         images.map((item, index) => (
