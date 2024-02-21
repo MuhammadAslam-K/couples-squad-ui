@@ -12,12 +12,13 @@ function ActivitiesCarousel(props: { details: ActivitiesDetails[] }) {
 
     const { details } = props
     return (
-        <div className="carousel carousel-end rounded-box">
+        <div className="carousel carousel-end">
             <div className="carousel-item overflow-hidden">
                 {   // Mapping over the details array to render each items
                     details.map((item, index) => (
-                        <div key={index} className="relative mr-10 ml-10 last:mr-0 overflow-hidden">
+                        <div key={index} className="relative mr-10 last:mr-0 overflow-hidden">
                             <div className="absolute z-10 p-4 text-white bg-opacity-50 w-full">
+                                {/* <span className="bg-red-500 px-2 p-0 m-0">live</span> */}
                                 <p className="text-2xl font-zilla m-3 mt-6 max-w-72">{item.description}</p>
 
                                 <div className="mt-28 m-3 flex items-center">

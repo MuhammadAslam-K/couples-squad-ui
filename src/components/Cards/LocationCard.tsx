@@ -14,7 +14,7 @@ function LocationCard(props: { details: LocationCardDetails[] }) {
         <>
             {   // Mapping over the details array to render each element as a card
                 details.map((item, index) => (
-                    <div key={index} className="card shadow-md flex flex-col md:flex-row">
+                    <div key={index} className="shadow-md flex flex-col md:flex-row">
                         {/* Image Container */}
                         <figure>
                             <img src={item.imageUrl} className="w-24 h-24 md:w-[104px] md:h-[104px] object-cover" alt={item.location} />

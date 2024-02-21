@@ -14,7 +14,7 @@ function PurchaseCard(props: { details: CardDetails[] }) {
         <>
             {   // Mapping over the details array to render each element as a card
                 details.map((item, index) => (
-                    <div key={index} className="card w-full bg-base-100 shadow-xl">
+                    <div key={index} className="w-full bg-base-100 shadow-sm">
                         {/* Image Container */}
                         <figure>
                             <img src={item.imageUrl} alt="Event" className="w-full object-cover h-48" />
