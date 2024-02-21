@@ -29,7 +29,7 @@ export default function MeetupInfo() {
 
             <div className="md:flex-1 md:mt-0 mt-8">
                 <div className="w-full h-full">
-                    <img src="../../../public/img/meetup-info-img2.png" alt="Slanting" style={{ transform: 'rotate(-20deg)' }} />
+                    <img src="/img/meetup-info-img2.png" alt="Slanting" style={{ transform: 'rotate(-20deg)' }} />
                 </div>
             </div>
 

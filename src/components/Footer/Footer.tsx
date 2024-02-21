@@ -4,7 +4,7 @@ function Footer() {
         <div className="w-10/12">
             <footer className="footer p-10 bg-black  text-white">
                 <aside>
-                    <img src="../../../public/img/logo-black.png" alt="Logo" className="h-20 w-auto" />
+                    <img src="/img/logo-black.png" alt="Logo" className="h-20 w-auto" />
                     <p>Creativo is where your imagination and our expertise <br /> converge to create design solutions that elevate <br /> your brand and set you apart from the competition.</p>
                     <div className="my-3">hello@cedcommerce.com</div>
                     <div >+1-800-123 4567</div>

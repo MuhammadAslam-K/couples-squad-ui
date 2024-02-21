@@ -31,7 +31,7 @@ function Navbar() {
                     </ul>
                 </div>
                 {/* Logo */}
-                <img src="../../../public/img/logo.png" alt="Logo" className="h-20 w-auto" />
+                <img src="/img/logo.png" alt="Logo" className="h-20 w-auto" />
             </div>
 
             {/* Center part of the navbar (visible on larger screens) */}
