@@ -7,7 +7,7 @@ function ImageCarousel(props: { images: string[] }) {
             <div className="carousel-item">
                 {   // Mapping through each image in the images array
                     images.map((item, index) => (
-                        <div key={index} className="carousel-item mr-10 ml-10 last:mr-0">
+                        <div key={index} className="carousel-item mr-10 last:mr-0">
                             <img className="h-72 w-full" src={item} alt={`Carousel item ${index + 1}`} />
                         </div>))
                 }

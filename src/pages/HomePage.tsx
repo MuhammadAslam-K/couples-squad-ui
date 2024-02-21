@@ -82,7 +82,7 @@ function HomePage() {
                             <p className="font-semibold text-3xl text-black font-zilla">Music</p>
                             <div className="flex-grow border-t-[2px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />        {/* Arrow Icon from react-icons */}
                             </div>
                         </div>
@@ -100,7 +100,7 @@ function HomePage() {
                             <p className="font-semibold text-3xl text-black font-zilla">Activities</p>
                             <div className="flex-grow border-t-[2px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />        {/* Arrow Icon from react-icons */}
                             </div>
                         </div>
@@ -124,7 +124,7 @@ function HomePage() {
                             <p className="font-semibold text-3xl text-black font-zilla">Features</p>
                             <div className="flex-grow border-t-[2px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />     {/* Arrow Icon from react-icons */}
                             </div>
                         </div>
@@ -142,7 +142,7 @@ function HomePage() {
                             <p className="font-semibold text-xl sm:text-2xl md:text-3xl text-black font-zilla">Upcoming Events</p>
                             <div className="flex-grow border-t-[2px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />        {/* Arrow Icon from react-icons */}
                             </div>
                         </div>
@@ -161,7 +161,7 @@ function HomePage() {
                             <p className="font-semibold text-xl sm:text-2xl md:text-3xl text-black font-zilla">Popular cities on Meetup</p>
                             <div className="flex-grow border-t-[2px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />        {/* Arrow Icon from react-icons */}
                             </div>
                         </div>
@@ -179,7 +179,7 @@ function HomePage() {
                             <p className="font-semibold text-3xl text-black font-zilla">How Meetup  <span className="bg-black text-white px-2">works</span></p>
                             <div className="flex-grow border-t-[1px] border-gray-200 mx-4"></div>
                             <div className="flex items-center text-black hover:underline cursor-pointer">
-                                <p>See more</p>
+                                <p className='font-semibold text-sm'>See More</p>
                                 <FaLongArrowAltRight className="ml-2" />        {/* Arrow Icon from react-icons */}
                             </div>
                         </div>

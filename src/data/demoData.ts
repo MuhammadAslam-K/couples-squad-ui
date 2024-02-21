@@ -27,14 +27,14 @@ export const musicDetails = [
 ]
 
 export const featuredDetails = [
-    { imageUrl: '/img/music/music-img1.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img2.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img3.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img4.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img5.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img6.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img7.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
-    { imageUrl: '/img/music/music-img8.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-1.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-2.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-3.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-4.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-5.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-6.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-7.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
+    { imageUrl: '/img/featured/img-8.jpg', location: "Kochi", date: "Feb 12", description: "The Music with love: Online class Taken by robert smith.", price: "233.99" },
 ]
 
 export const upcomingEvents = [
